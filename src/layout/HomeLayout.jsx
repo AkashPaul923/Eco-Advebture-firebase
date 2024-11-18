@@ -1,9 +1,11 @@
+import Banner from "../components/Banner";
 
 
 const HomeLayout = () => {
     return (
-        <div>
+        <div className="max-w-7xl mx-auto">
             home
+            <Banner></Banner>
         </div>
     );
 };

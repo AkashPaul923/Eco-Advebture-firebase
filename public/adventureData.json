@@ -1,0 +1,183 @@
+[
+    {
+      "adventureTitle": "Rainforest Trekking",
+      "image": "rainforest_trekking.jpg",
+      "id": "AD001",
+      "categoryName": "Hiking",
+      "shortDescription": "Explore the depths of a pristine rainforest on foot.",
+      "adventureCost": 150,
+      "bookingAvailability": true,
+      "location": "Lowachara National Park, Bangladesh",
+      "duration": "2 Days",
+      "adventureLevel": "Intermediate",
+      "includedItems": ["Guide", "Meals", "Trekking Gear", "First Aid Kit"],
+      "ecoFriendlyFeatures": ["No Plastic Policy", "Trail Clean-Up", "Locally Sourced Meals"],
+      "maxGroupSize": 15,
+      "specialInstructions": [
+        "Wear comfortable hiking shoes.",
+        "Bring a reusable water bottle.",
+        "Respect local wildlife."
+      ]
+    },
+    {
+      "adventureTitle": "Mangrove Kayaking",
+      "image": "mangrove_kayaking.jpg",
+      "id": "AD002",
+      "categoryName": "Water Adventures",
+      "shortDescription": "Paddle through serene mangrove forests and observe unique ecosystems.",
+      "adventureCost": 120,
+      "bookingAvailability": true,
+      "location": "Sundarbans, Bangladesh",
+      "duration": "1 Day",
+      "adventureLevel": "Beginner",
+      "includedItems": ["Kayak", "Life Jacket", "Guide"],
+      "ecoFriendlyFeatures": ["No Motorized Boats", "Wildlife Protection Awareness"],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Wear lightweight clothing.",
+        "Use eco-friendly sunscreen.",
+        "Avoid loud noises to protect wildlife."
+      ]
+    },
+    {
+      "adventureTitle": "Tea Garden Cycling Tour",
+      "image": "tea_garden_cycling.jpg",
+      "id": "AD003",
+      "categoryName": "Cycling",
+      "shortDescription": "Cycle through lush tea plantations and scenic hills.",
+      "adventureCost": 90,
+      "bookingAvailability": true,
+      "location": "Sreemangal, Bangladesh",
+      "duration": "Half Day",
+      "adventureLevel": "Easy",
+      "includedItems": ["Bicycle", "Helmet", "Snacks"],
+      "ecoFriendlyFeatures": ["No Emissions Activity", "Support for Local Farmers"],
+      "maxGroupSize": 12,
+      "specialInstructions": [
+        "Bring sunglasses and sunscreen.",
+        "Follow guide instructions.",
+        "Do not pick tea leaves without permission."
+      ]
+    },
+    {
+      "adventureTitle": "Coral Reef Snorkeling",
+      "image": "coral_reef_snorkeling.jpg",
+      "id": "AD004",
+      "categoryName": "Snorkeling",
+      "shortDescription": "Discover vibrant coral reefs and marine life.",
+      "adventureCost": 180,
+      "bookingAvailability": false,
+      "location": "St. Martin's Island, Bangladesh",
+      "duration": "1 Day",
+      "adventureLevel": "Intermediate",
+      "includedItems": ["Snorkeling Gear", "Boat Ride", "Guide"],
+      "ecoFriendlyFeatures": ["Coral-Friendly Sunscreen", "Marine Life Conservation Support"],
+      "maxGroupSize": 8,
+      "specialInstructions": [
+        "Do not touch the coral.",
+        "Practice responsible snorkeling.",
+        "Avoid littering in the ocean."
+      ]
+    },
+    {
+      "adventureTitle": "Eco-Village Homestay",
+      "image": "eco_village_homestay.jpg",
+      "id": "AD005",
+      "categoryName": "Cultural Experience",
+      "shortDescription": "Immerse yourself in local culture and sustainable living.",
+      "adventureCost": 100,
+      "bookingAvailability": true,
+      "location": "Chittagong Hill Tracts, Bangladesh",
+      "duration": "3 Days",
+      "adventureLevel": "Beginner",
+      "includedItems": ["Accommodation", "Meals", "Cultural Activities"],
+      "ecoFriendlyFeatures": ["Organic Farming Tour", "Renewable Energy Usage"],
+      "maxGroupSize": 6,
+      "specialInstructions": [
+        "Respect local customs and traditions.",
+        "Participate in sustainable practices.",
+        "Limit use of non-biodegradable items."
+      ]
+    },
+    {
+      "adventureTitle": "Eco-Safari in National Park",
+      "image": "eco_safari.jpg",
+      "id": "AD006",
+      "categoryName": "Wildlife Safari",
+      "shortDescription": "Get close to nature with a guided eco-safari.",
+      "adventureCost": 200,
+      "bookingAvailability": true,
+      "location": "Bandarban, Bangladesh",
+      "duration": "1 Day",
+      "adventureLevel": "Intermediate",
+      "includedItems": ["Guide", "Binoculars", "Snacks"],
+      "ecoFriendlyFeatures": ["Electric Safari Vehicles", "Wildlife Observation Protocols"],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Carry a camera with zoom lens.",
+        "Do not feed animals.",
+        "Wear neutral-colored clothing."
+      ]
+    },
+    {
+      "adventureTitle": "Beach Cleanup Drive",
+      "image": "beach_cleanup.jpg",
+      "id": "AD007",
+      "categoryName": "Volunteer Activity",
+      "shortDescription": "Join hands to clean and restore the beauty of the beach.",
+      "adventureCost": 30,
+      "bookingAvailability": true,
+      "location": "Cox's Bazar, Bangladesh",
+      "duration": "Half Day",
+      "adventureLevel": "Beginner",
+      "includedItems": ["Cleaning Equipment", "Snacks"],
+      "ecoFriendlyFeatures": ["Direct Environmental Impact", "Community Awareness"],
+      "maxGroupSize": 25,
+      "specialInstructions": [
+        "Wear gloves and masks.",
+        "Sort waste properly.",
+        "Encourage others to participate."
+      ]
+    },
+    {
+      "adventureTitle": "Mountain Eco-Trail",
+      "image": "mountain_eco_trail.jpg",
+      "id": "AD008",
+      "categoryName": "Hiking",
+      "shortDescription": "Experience breathtaking mountain views on an eco-friendly trail.",
+      "adventureCost": 170,
+      "bookingAvailability": true,
+      "location": "Rangamati, Bangladesh",
+      "duration": "2 Days",
+      "adventureLevel": "Advanced",
+      "includedItems": ["Guide", "Camping Gear", "Meals"],
+      "ecoFriendlyFeatures": ["Waste Collection Points", "Reusable Utensils"],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Prepare for steep climbs.",
+        "Carry extra water.",
+        "Leave no trace behind."
+      ]
+    },
+    {
+      "adventureTitle": "River Cleanup Kayaking",
+      "image": "river_cleanup_kayaking.jpg",
+      "id": "AD009",
+      "categoryName": "Volunteer Activity",
+      "shortDescription": "Help clean the river while enjoying a peaceful kayak ride.",
+      "adventureCost": 50,
+      "bookingAvailability": true,
+      "location": "Padma River, Bangladesh",
+      "duration": "1 Day",
+      "adventureLevel": "Intermediate",
+      "includedItems": ["Kayak", "Cleaning Tools", "Guide"],
+      "ecoFriendlyFeatures": ["Pollution Reduction", "Community Engagement"],
+      "maxGroupSize": 15,
+      "specialInstructions": [
+        "Wear waterproof clothing.",
+        "Sort collected waste.",
+        "Avoid disturbing aquatic life."
+      ]
+    }
+  ]
+  
