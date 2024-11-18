@@ -1,183 +1,140 @@
 [
-    {
+  {
       "adventureTitle": "Rainforest Trekking",
-      "image": "rainforest_trekking.jpg",
+      "image": "https://i.ibb.co.com/7g2Xf3G/Rainforest-Trekking.jpg",
       "id": "AD001",
       "categoryName": "Hiking",
-      "shortDescription": "Explore the depths of a pristine rainforest on foot.",
+      "shortDescription": "Embark on an unforgettable journey into the heart of a pristine rainforest. Experience the serene beauty of untouched nature as you explore dense vegetation, unique wildlife, and cascading waterfalls. This trek is perfect for nature enthusiasts who want to immerse themselves in an environment brimming with biodiversity. With guided trails and eco-conscious practices, you’ll uncover the secrets of the rainforest while leaving minimal impact on the environment.",
       "adventureCost": 150,
       "bookingAvailability": true,
       "location": "Lowachara National Park, Bangladesh",
       "duration": "2 Days",
       "adventureLevel": "Intermediate",
-      "includedItems": ["Guide", "Meals", "Trekking Gear", "First Aid Kit"],
-      "ecoFriendlyFeatures": ["No Plastic Policy", "Trail Clean-Up", "Locally Sourced Meals"],
+      "includedItems": ["Professional Guide", "Nutritious Meals", "Trekking Gear", "First Aid Kit", "Detailed Itinerary", "Rain Protection"],
+      "ecoFriendlyFeatures": ["No Plastic Policy", "Trail Clean-Up Initiatives", "Locally Sourced Meals", "Compostable Packaging", "Support for Local Communities", "Renewable Energy Use"],
       "maxGroupSize": 15,
       "specialInstructions": [
-        "Wear comfortable hiking shoes.",
-        "Bring a reusable water bottle.",
-        "Respect local wildlife."
+          "Wear comfortable hiking shoes.",
+          "Bring a reusable water bottle.",
+          "Use eco-friendly insect repellents.",
+          "Avoid picking plants or disturbing wildlife.",
+          "Carry personal waste bags.",
+          "Follow all safety guidelines provided by the guide."
       ]
-    },
-    {
-      "adventureTitle": "Mangrove Kayaking",
-      "image": "mangrove_kayaking.jpg",
+  },
+  {
+      "adventureTitle": "Mountain Treks",
+      "image": "https://i.ibb.co.com/9gwzJD3/Mountain-Treks.jpg",
       "id": "AD002",
-      "categoryName": "Water Adventures",
-      "shortDescription": "Paddle through serene mangrove forests and observe unique ecosystems.",
-      "adventureCost": 120,
-      "bookingAvailability": true,
-      "location": "Sundarbans, Bangladesh",
-      "duration": "1 Day",
-      "adventureLevel": "Beginner",
-      "includedItems": ["Kayak", "Life Jacket", "Guide"],
-      "ecoFriendlyFeatures": ["No Motorized Boats", "Wildlife Protection Awareness"],
-      "maxGroupSize": 10,
-      "specialInstructions": [
-        "Wear lightweight clothing.",
-        "Use eco-friendly sunscreen.",
-        "Avoid loud noises to protect wildlife."
-      ]
-    },
-    {
-      "adventureTitle": "Tea Garden Cycling Tour",
-      "image": "tea_garden_cycling.jpg",
-      "id": "AD003",
-      "categoryName": "Cycling",
-      "shortDescription": "Cycle through lush tea plantations and scenic hills.",
-      "adventureCost": 90,
-      "bookingAvailability": true,
-      "location": "Sreemangal, Bangladesh",
-      "duration": "Half Day",
-      "adventureLevel": "Easy",
-      "includedItems": ["Bicycle", "Helmet", "Snacks"],
-      "ecoFriendlyFeatures": ["No Emissions Activity", "Support for Local Farmers"],
-      "maxGroupSize": 12,
-      "specialInstructions": [
-        "Bring sunglasses and sunscreen.",
-        "Follow guide instructions.",
-        "Do not pick tea leaves without permission."
-      ]
-    },
-    {
-      "adventureTitle": "Coral Reef Snorkeling",
-      "image": "coral_reef_snorkeling.jpg",
-      "id": "AD004",
-      "categoryName": "Snorkeling",
-      "shortDescription": "Discover vibrant coral reefs and marine life.",
-      "adventureCost": 180,
-      "bookingAvailability": false,
-      "location": "St. Martin's Island, Bangladesh",
-      "duration": "1 Day",
-      "adventureLevel": "Intermediate",
-      "includedItems": ["Snorkeling Gear", "Boat Ride", "Guide"],
-      "ecoFriendlyFeatures": ["Coral-Friendly Sunscreen", "Marine Life Conservation Support"],
-      "maxGroupSize": 8,
-      "specialInstructions": [
-        "Do not touch the coral.",
-        "Practice responsible snorkeling.",
-        "Avoid littering in the ocean."
-      ]
-    },
-    {
-      "adventureTitle": "Eco-Village Homestay",
-      "image": "eco_village_homestay.jpg",
-      "id": "AD005",
-      "categoryName": "Cultural Experience",
-      "shortDescription": "Immerse yourself in local culture and sustainable living.",
-      "adventureCost": 100,
-      "bookingAvailability": true,
-      "location": "Chittagong Hill Tracts, Bangladesh",
-      "duration": "3 Days",
-      "adventureLevel": "Beginner",
-      "includedItems": ["Accommodation", "Meals", "Cultural Activities"],
-      "ecoFriendlyFeatures": ["Organic Farming Tour", "Renewable Energy Usage"],
-      "maxGroupSize": 6,
-      "specialInstructions": [
-        "Respect local customs and traditions.",
-        "Participate in sustainable practices.",
-        "Limit use of non-biodegradable items."
-      ]
-    },
-    {
-      "adventureTitle": "Eco-Safari in National Park",
-      "image": "eco_safari.jpg",
-      "id": "AD006",
-      "categoryName": "Wildlife Safari",
-      "shortDescription": "Get close to nature with a guided eco-safari.",
+      "categoryName": "Hiking",
+      "shortDescription": "Challenge yourself with breathtaking mountain treks. Climb rugged trails that lead to panoramic vistas of majestic peaks and serene valleys. Along the way, you’ll encounter diverse flora, fauna, and local cultures that thrive in these high-altitude environments. Perfect for adventure seekers looking to push their limits while appreciating the raw beauty of nature.",
       "adventureCost": 200,
       "bookingAvailability": true,
-      "location": "Bandarban, Bangladesh",
-      "duration": "1 Day",
-      "adventureLevel": "Intermediate",
-      "includedItems": ["Guide", "Binoculars", "Snacks"],
-      "ecoFriendlyFeatures": ["Electric Safari Vehicles", "Wildlife Observation Protocols"],
-      "maxGroupSize": 10,
-      "specialInstructions": [
-        "Carry a camera with zoom lens.",
-        "Do not feed animals.",
-        "Wear neutral-colored clothing."
-      ]
-    },
-    {
-      "adventureTitle": "Beach Cleanup Drive",
-      "image": "beach_cleanup.jpg",
-      "id": "AD007",
-      "categoryName": "Volunteer Activity",
-      "shortDescription": "Join hands to clean and restore the beauty of the beach.",
-      "adventureCost": 30,
-      "bookingAvailability": true,
-      "location": "Cox's Bazar, Bangladesh",
-      "duration": "Half Day",
-      "adventureLevel": "Beginner",
-      "includedItems": ["Cleaning Equipment", "Snacks"],
-      "ecoFriendlyFeatures": ["Direct Environmental Impact", "Community Awareness"],
-      "maxGroupSize": 25,
-      "specialInstructions": [
-        "Wear gloves and masks.",
-        "Sort waste properly.",
-        "Encourage others to participate."
-      ]
-    },
-    {
-      "adventureTitle": "Mountain Eco-Trail",
-      "image": "mountain_eco_trail.jpg",
-      "id": "AD008",
-      "categoryName": "Hiking",
-      "shortDescription": "Experience breathtaking mountain views on an eco-friendly trail.",
-      "adventureCost": 170,
-      "bookingAvailability": true,
-      "location": "Rangamati, Bangladesh",
-      "duration": "2 Days",
+      "location": "Himalayas, Nepal",
+      "duration": "5 Days",
       "adventureLevel": "Advanced",
-      "includedItems": ["Guide", "Camping Gear", "Meals"],
-      "ecoFriendlyFeatures": ["Waste Collection Points", "Reusable Utensils"],
+      "includedItems": ["Experienced Guide", "Mountain Camping Gear", "Meals and Snacks", "First Aid Kit", "Trail Maps", "Trekking Poles"],
+      "ecoFriendlyFeatures": ["Leave No Trace Policy", "Solar-Powered Equipment", "Local Guides", "Biodegradable Supplies", "Eco-Friendly Lodging", "Sustainable Food Practices"],
       "maxGroupSize": 10,
       "specialInstructions": [
-        "Prepare for steep climbs.",
-        "Carry extra water.",
-        "Leave no trace behind."
+          "Bring layers for cold weather.",
+          "Carry sunscreen and sunglasses.",
+          "Stay hydrated and carry a water purifier.",
+          "Keep noise levels low to avoid disturbing wildlife.",
+          "Avoid creating campfires in prohibited areas.",
+          "Always stick to marked trails."
       ]
-    },
-    {
-      "adventureTitle": "River Cleanup Kayaking",
-      "image": "river_cleanup_kayaking.jpg",
-      "id": "AD009",
-      "categoryName": "Volunteer Activity",
-      "shortDescription": "Help clean the river while enjoying a peaceful kayak ride.",
-      "adventureCost": 50,
+  },
+  {
+      "adventureTitle": "Ocean Dives",
+      "image": "https://i.ibb.co.com/8Bhjw5Y/Ocean-Dives.jpg",
+      "id": "AD003",
+      "categoryName": "Water Sports",
+      "shortDescription": "Dive into the vibrant underwater world and discover the beauty of marine life. From colorful coral reefs to exotic fish and shipwrecks, each dive offers a unique glimpse into the ocean’s mysteries. Whether you are a novice or an experienced diver, this adventure is designed to combine excitement with eco-conscious exploration of marine ecosystems.",
+      "adventureCost": 300,
       "bookingAvailability": true,
-      "location": "Padma River, Bangladesh",
-      "duration": "1 Day",
+      "location": "Great Barrier Reef, Australia",
+      "duration": "3 Days",
       "adventureLevel": "Intermediate",
-      "includedItems": ["Kayak", "Cleaning Tools", "Guide"],
-      "ecoFriendlyFeatures": ["Pollution Reduction", "Community Engagement"],
+      "includedItems": ["Diving Gear", "Certified Instructor", "Meals", "First Aid Kit", "Underwater Cameras", "Wetsuits"],
+      "ecoFriendlyFeatures": ["Coral-Safe Practices", "No Plastic Policy", "Eco-Lodges", "Marine Conservation Support", "Biodegradable Sunscreen", "Sustainable Diving Techniques"],
+      "maxGroupSize": 12,
+      "specialInstructions": [
+          "Bring swimwear and a towel.",
+          "Avoid touching coral reefs.",
+          "Follow diving safety guidelines.",
+          "Use reef-safe sunscreen.",
+          "Practice buoyancy control to prevent coral damage.",
+          "Dispose of waste properly."
+      ]
+  },
+  {
+      "adventureTitle": "Wildlife Safaris",
+      "image": "https://i.ibb.co.com/XFq1DLs/Wildlife-Safaris.jpg",
+      "id": "AD004",
+      "categoryName": "Safari",
+      "shortDescription": "Immerse yourself in the wild and observe majestic animals in their natural habitats. This guided safari takes you through expansive landscapes teeming with wildlife, from big cats to grazing herbivores and a variety of bird species. Learn about conservation efforts while experiencing the thrill of encountering wildlife up close.",
+      "adventureCost": 250,
+      "bookingAvailability": true,
+      "location": "Serengeti, Tanzania",
+      "duration": "4 Days",
+      "adventureLevel": "Easy",
+      "includedItems": ["Safari Vehicle", "Professional Guide", "Meals", "Binoculars", "Field Journals", "First Aid Kit"],
+      "ecoFriendlyFeatures": ["Solar-Powered Camps", "Local Conservation Support", "Waste Management Programs", "Plastic-Free Policies", "Eco-Friendly Transportation", "Sustainable Tourism Practices"],
+      "maxGroupSize": 20,
+      "specialInstructions": [
+          "Carry a camera and binoculars.",
+          "Dress in neutral colors.",
+          "Avoid loud noises.",
+          "Do not feed or touch animals.",
+          "Stay inside the vehicle during game drives.",
+          "Follow the guide’s instructions at all times."
+      ]
+  },
+  {
+      "adventureTitle": "Desert Exploration",
+      "image": "https://i.ibb.co.com/pwcQtv8/Desert-Exploration.jpg",
+      "id": "AD005",
+      "categoryName": "Exploration",
+      "shortDescription": "Discover the mystique of vast desert landscapes. Traverse golden sand dunes, experience breathtaking sunsets, and uncover ancient secrets hidden in the arid terrain. This adventure combines the thrill of exploration with cultural immersion, offering a glimpse into the life and traditions of desert communities.",
+      "adventureCost": 220,
+      "bookingAvailability": true,
+      "location": "Sahara Desert, Morocco",
+      "duration": "3 Days",
+      "adventureLevel": "Intermediate",
+      "includedItems": ["Camel Rides", "Meals", "Desert Camping Gear", "Guided Tours", "Water Supply", "First Aid Kit"],
+      "ecoFriendlyFeatures": ["Plastic-Free Meals", "Solar Lanterns", "Locally Sourced Ingredients", "Support for Local Artisans", "Biodegradable Waste Disposal", "Minimal Impact Travel"],
+      "maxGroupSize": 12,
+      "specialInstructions": [
+          "Wear lightweight, breathable clothing.",
+          "Bring sunscreen and a hat.",
+          "Stay hydrated with a reusable water bottle.",
+          "Respect local traditions and customs.",
+          "Avoid littering in the desert.",
+          "Do not disturb desert flora or fauna."
+      ]
+  },
+  {
+      "adventureTitle": "Mangrove Forest Expeditions",
+      "image": "https://i.ibb.co.com/jLGgq37/Mangrove-Forest-Expeditions.jpg",
+      "id": "AD006",
+      "categoryName": "Boat Tours",
+      "shortDescription": "Explore serene mangrove waterways, teeming with life. Glide through narrow channels lined with unique vegetation and spot wildlife, including birds, reptiles, and aquatic creatures. This eco-friendly expedition offers an educational and immersive experience that highlights the importance of mangroves in maintaining ecological balance.",
+      "adventureCost": 140,
+      "bookingAvailability": true,
+      "location": "Sundarbans, Bangladesh",
+      "duration": "2 Days",
+      "adventureLevel": "Easy",
+      "includedItems": ["Guided Boat Tours", "Binoculars", "Meals", "First Aid Kit", "Educational Materials", "Life Jackets"],
+      "ecoFriendlyFeatures": ["Plastic-Free Zone", "Wildlife Conservation Support", "Eco-Friendly Boats", "Waste Recycling", "Support for Local Guides", "Sustainable Tourism Practices"],
       "maxGroupSize": 15,
       "specialInstructions": [
-        "Wear waterproof clothing.",
-        "Sort collected waste.",
-        "Avoid disturbing aquatic life."
+          "Wear comfortable clothing.",
+          "Bring a reusable water bottle.",
+          "Follow safety instructions for boat tours.",
+          "Avoid loud noises to prevent disturbing wildlife.",
+          "Do not litter in waterways.",
+          "Respect the natural habitat of mangroves."
       ]
-    }
-  ]
-  
+  }
+]
