@@ -5,6 +5,7 @@ import HomeLayout from "../layout/HomeLayout";
 import AuthLayout from "../layout/AuthLayout";
 import LogIn from "../components/LogIn";
 import Register from "../components/Register";
+import AdventureDetail from "../components/AdventureDetail";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,16 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <HomeLayout></HomeLayout>
+        },
+        {
+          path: "/adventure/detail/:id",
+          element: <AdventureDetail></AdventureDetail>,
+          loader: async({params}) =>{
+            const res = await fetch("/adventureData.json")
+            const data = await res.json()
+            const sData = data.find( d => d.id === params.id)
+            return sData
+          }
         },
         {
             path: "/auth",

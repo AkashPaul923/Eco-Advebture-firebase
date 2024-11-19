@@ -7,6 +7,8 @@ const LogIn = () => {
         <h1 className="text-center font-bold text-3xl">Login</h1>
         
         <div className="card max-w-lg mx-auto  w-full shrink-0">
+        <div><button className="btn block my-5 text-center mx-auto"> Login with Google</button></div>
+        <div className="divider mb-0">OR</div>
           <form className="card-body">
             <div className="form-control">
               <label className="label">

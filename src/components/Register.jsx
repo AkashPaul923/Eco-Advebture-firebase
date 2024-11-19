@@ -4,10 +4,12 @@ const Register = () => {
   return (
     <div className="bg-base-200 py-20">
       <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl">
-        <h1 className="text-center font-bold text-3xl">Create an Account</h1>
+        <h1 className="text-center font-bold text-3xl mb-5">Create an Account</h1>
         
         <div className="card max-w-lg mx-auto  w-full shrink-0">
-          <form className="card-body">
+            <div><button className="btn block text-center mx-auto"> Login with Google</button></div>
+            <div className="divider mb-0">OR</div>
+          <form className="card-body pt-1">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>

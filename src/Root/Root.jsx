@@ -12,7 +12,7 @@ const Root = () => {
             <main>
                 <Outlet></Outlet>
             </main>
-            <div>
+            <div className='bg-base-200'>
                 <Footer></Footer>
             </div>
         </div>
