@@ -1,6 +1,7 @@
 
 import AdventureExperience from "../components/AdventureExperience";
 import Banner from "../components/Banner";
+import Features from "../components/Features";
 
 
 const HomeLayout = () => {
@@ -9,6 +10,7 @@ const HomeLayout = () => {
             home
             <Banner></Banner>
             <AdventureExperience></AdventureExperience>
+            <Features></Features>
         </div>
     );
 };

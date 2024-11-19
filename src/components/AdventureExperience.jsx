@@ -6,7 +6,7 @@ const AdventureExperience = () => {
     const [adventures , setAdventures] = useState([])
 
     useEffect(() =>{
-        fetch("adventureData.json")
+        fetch("/adventureData.json")
         .then(res => res.json())
         .then(data => setAdventures(data))
     },[])

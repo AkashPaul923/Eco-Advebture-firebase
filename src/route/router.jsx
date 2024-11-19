@@ -6,6 +6,9 @@ import AuthLayout from "../layout/AuthLayout";
 import LogIn from "../components/LogIn";
 import Register from "../components/Register";
 import AdventureDetail from "../components/AdventureDetail";
+import MyProfile from "../layout/MyProfile";
+import UpdateProfile from "../layout/UpdateProfile";
+import PrivateRoute from "../components/Auth/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -20,7 +23,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/adventure/detail/:id",
-          element: <AdventureDetail></AdventureDetail>,
+          element: <PrivateRoute><AdventureDetail></AdventureDetail></PrivateRoute>,
           loader: async({params}) =>{
             const res = await fetch("/adventureData.json")
             const data = await res.json()
@@ -42,6 +45,14 @@ const router = createBrowserRouter([
                 },
             ]
         },
+        {
+          path: "/myprofile",
+          element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>,
+        },
+        {
+          path: "/updateprofile",
+          element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+        }
       ]
     },
   ]);
