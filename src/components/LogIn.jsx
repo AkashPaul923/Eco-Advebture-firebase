@@ -1,9 +1,12 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
+import { FaGoogle } from "react-icons/fa";
+
+
 
 const LogIn = () => {
-  const { handleSignIn } = useContext(AuthContext)
+  const { handleSignIn, handleGoogleSignIn } = useContext(AuthContext)
   const handleSubmit = ( e ) =>{
     e.preventDefault()
     const email = e.target.email.value
@@ -14,10 +17,10 @@ const LogIn = () => {
   return (
     <div className="bg-base-200 py-20">
       <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl">
-        <h1 className="text-center font-bold text-3xl">Login</h1>
+        <h1 className="text-center mb-6 font-bold text-3xl">Login</h1>
         
         <div className="card max-w-lg mx-auto  w-full shrink-0">
-        <div><button className="btn block my-5 text-center mx-auto"> Login with Google</button></div>
+        <button onClick={handleGoogleSignIn} className="btn btn-outline btn-info text-center mx-auto flex"><FaGoogle></FaGoogle> <span>Login with Google</span></button> 
         <div className="divider mb-0">OR</div>
           <form onSubmit={handleSubmit} className="card-body">
             <div className="form-control">

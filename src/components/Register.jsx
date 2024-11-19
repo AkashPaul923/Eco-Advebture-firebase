@@ -1,9 +1,10 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
+import { FaGoogle } from "react-icons/fa";
 
 const Register = () => {
-  const { handleRegister, manageProfile } = useContext(AuthContext)
+  const { handleRegister, manageProfile , handleGoogleSignIn } = useContext(AuthContext)
 
   const handleSubmit = ( e ) =>{
     e.preventDefault()
@@ -21,7 +22,7 @@ const Register = () => {
         <h1 className="text-center font-bold text-3xl mb-5">Create an Account</h1>
         
         <div className="card max-w-lg mx-auto  w-full shrink-0">
-            <div><button className="btn block text-center mx-auto"> Login with Google</button></div>
+            <button onClick={handleGoogleSignIn} className="btn btn-outline btn-info text-center mx-auto flex"><FaGoogle></FaGoogle> <span>Login with Google</span></button> 
             <div className="divider mb-0">OR</div>
           <form onSubmit={handleSubmit} className="card-body pt-1">
             <div className="form-control">
