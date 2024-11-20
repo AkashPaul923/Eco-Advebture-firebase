@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 
@@ -18,12 +19,17 @@ const LogIn = () => {
     handleSignIn( email, password )
     .then(res => {
         navigate("/")
+        toast.success("Successfully Register")
+    })
+    .catch(res =>{
+      toast.error("Email Or Password incorrect")
     })
   }
   const handleGoogle = () => {
     handleGoogleSignIn()
     .then(res=>{
       navigate("/")
+      toast.success("Successfully Register")
     })
   }
   return (

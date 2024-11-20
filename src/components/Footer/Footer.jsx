@@ -8,9 +8,9 @@ const F = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <h2 className="text-xl font-bold mb-4">ShareTrip</h2>
+            <h2 className="text-xl font-bold mb-4">Eco-Adventure</h2>
             <p className="text-sm">
-              ShareTrip is the country’s first and leading online travel aggregator (OTA). 
+              Eco-Adventure is the country’s first and leading online travel aggregator (OTA). 
               Since our inception, we have dreamt of making travel easier for people of all ages 
               and we move forward to make that dream into reality.
             </p>
@@ -43,7 +43,7 @@ const F = () => {
           <div>
             <h3 className="font-semibold mb-4">Contact Us</h3>
             <ul className="text-sm space-y-2">
-              <li>Email: <a href="mailto:ask@sharetrip.net" className="text-blue-600">ask@sharetrip.net</a></li>
+              <li>Email: <a href="mailto:ask@ecoadventure.net" className="text-blue-600">ask@ecoadventure.net</a></li>
               <li>Phone: +880 9617 617617</li>
               <li>WhatsApp: <a href="#" className="text-blue-600">Message us</a></li>
             </ul>
@@ -59,7 +59,7 @@ const F = () => {
 
         {/* Bottom Section */}
         <div className="border-t pt-4 text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center">
-          <p>© 2024 ShareTrip. All rights reserved.</p>
+          <p>© 2024 Eco-Adventure. All rights reserved.</p>
           <div className="flex space-x-4">
             <a href="#">Support Center</a>
             <a href="#">Payment Security</a>

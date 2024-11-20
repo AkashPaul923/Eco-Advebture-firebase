@@ -2,9 +2,10 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Register = () => {
-  const { handleRegister, manageProfile , handleGoogleSignIn } = useContext(AuthContext)
+  const { handleRegister, manageProfile , handleGoogleSignIn, setUser } = useContext(AuthContext)
   const navigate = useNavigate()
   const handleSubmit = ( e ) =>{
     e.preventDefault()
@@ -14,15 +15,20 @@ const Register = () => {
     const password = e.target.password.value
     // console.log(name, photo, email, password);
     handleRegister( email, password )
-    .then(() =>{
+    .then((res) =>{
       manageProfile( name, photo )
-      navigate("/")
+      .then(() =>{
+        setUser({...res.user, displayName: name, photoURL : photo})
+        navigate("/")
+      })
+      toast.success("Successfully Login")
     })
   }
   const handleGoogle = () => {
     handleGoogleSignIn()
     .then(res=>{
       navigate("/")
+      toast.success("Successfully Login")
     })
   }
   return (

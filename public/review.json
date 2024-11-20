@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "client_name": "Alice Johnson",
+    "rating": 5,
+    "review_date": "2024-11-18",
+    "comment": "Absolutely loved the trekking experience! The guides were knowledgeable and eco-conscious. Highly recommended!",
+    "profile_image": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 2,
+    "client_name": "Michael Lee",
+    "rating": 4,
+    "review_date": "2024-11-15",
+    "comment": "The kayaking trip was thrilling! A bit challenging for beginners but overall an amazing adventure.",
+    "profile_image": "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 3,
+    "client_name": "Sophia Anika",
+    "rating": 5,
+    "review_date": "2024-11-12",
+    "comment": "The eco-friendly approach is inspiring. Loved the serene camping experience in the forest.",
+    "profile_image": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 4,
+    "client_name": "Ryan Carter",
+    "rating": 3,
+    "review_date": "2024-11-10",
+    "comment": "Beautiful experience but could use better facilities. The nature hike was enjoyable, though.",
+    "profile_image": "https://images.pexels.com/photos/1121796/pexels-photo-1121796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 5,
+    "client_name": "Nina Das",
+    "rating": 5,
+    "review_date": "2024-11-08",
+    "comment": "An unforgettable experience! The tea garden visit was both relaxing and educational.",
+    "profile_image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 6,
+    "client_name": "Ethan Brown",
+    "rating": 4,
+    "review_date": "2024-11-06",
+    "comment": "The bird-watching tour was incredible! Saw so many rare species. A bit pricey but worth it.",
+    "profile_image": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 7,
+    "client_name": "Laila Karim",
+    "rating": 5,
+    "review_date": "2024-11-04",
+    "comment": "The night safari was thrilling and safe! Perfect for adventure enthusiasts.",
+    "profile_image": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": 8,
+    "client_name": "Daniel Wilson",
+    "rating": 4,
+    "review_date": "2024-11-02",
+    "comment": "The eco-lodge was clean and comfortable. The star-gazing activity was a highlight.",
+    "profile_image": "https://images.pexels.com/photos/868113/pexels-photo-868113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]

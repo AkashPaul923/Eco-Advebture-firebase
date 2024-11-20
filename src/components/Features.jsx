@@ -2,11 +2,13 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { FaUserTie } from "react-icons/fa";
 import { FaMountainSun } from "react-icons/fa6";
 import { GiBackpack } from "react-icons/gi";
+import 'animate.css';
 
 const Features = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-12" >
       <div className="container mx-auto px-4">
+        <p className="text-5xl font-bold text-center mb-14">Our Features</p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Feature 1 */}
           <div className="flex flex-col justify-center items-center text-center">

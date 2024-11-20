@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../components/Auth/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 const UpdateProfile = () => {
-  const { manageProfile } = useContext( AuthContext)
-  const Navigate = useNavigate()
+  const { manageProfile, setUser, user } = useContext( AuthContext )
+  const navigate = useNavigate()
 
   const handleSubmit = ( e ) =>{
     e.preventDefault()
@@ -13,9 +14,11 @@ const UpdateProfile = () => {
     const photo = e.target.photo.value
     // console.log(name, photo);
     manageProfile( name, photo )
-    .then( (res) => {
-        Navigate('/myprofile')
-    })
+      .then( () =>{
+        setUser({ ...user, displayName: name, photoURL : photo})
+        navigate('/myprofile')
+        toast.success("Successfully updated Name and Photo URL") 
+      })
     
   }
   return (

@@ -1,16 +1,24 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Auth/AuthProvider";
+import { toast } from "react-toastify";
 // import auth from "../../firebase/firebase.init";
 
 const Navbar = () => {
-    const { user, handleSignOut } = useContext( AuthContext )
+    const { user, handleSignOut, loader } = useContext( AuthContext )
     console.log(user);
     const links = <>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/myprofile">My Profile</NavLink></li>
                     <li><NavLink to="/auth/register">register</NavLink></li>
                 </>
+   
+   const handleLogOut = () =>{
+    handleSignOut()
+    .then(res =>{
+        toast.success("Successfully LogOut")
+    })
+   }
   return (
     <div className="navbar bg-base-100 max-w-7xl mx-auto">
         <div className="navbar-start">
@@ -26,7 +34,7 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
-            <h2 className=" text-xl">Eco-Adventure Experiences</h2>
+            <h2 className=" text-xl">Eco-Adventure</h2>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -40,7 +48,8 @@ const Navbar = () => {
                 user && <img className="h-12 w-12 object-cover rounded-full border mr-3" src={user.photoURL} alt="" />   
             }
             {
-                user ? <button onClick={handleSignOut} className="btn">Log Out</button> 
+                loader ? ""   :
+                user ? <button onClick={handleLogOut} className="btn">Log Out</button> 
                 : <Link to="/auth/login" className="btn">Log in</Link>
             }
             

@@ -25,7 +25,7 @@ const AuthProvider = ({children}) => {
     }
 
     const handleSignOut = () =>{
-        signOut( auth )
+        return signOut( auth )
     }
 
     const manageProfile = ( name, photo ) =>{
@@ -59,7 +59,8 @@ const AuthProvider = ({children}) => {
         handleSignIn,
         handleSignOut,
         manageProfile,
-        loader
+        loader,
+        setUser
     }
     return (
         <AuthContext.Provider value={ authInfo }>
