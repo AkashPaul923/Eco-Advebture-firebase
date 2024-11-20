@@ -5,7 +5,7 @@ const AdventureCard = ({ adventure }) => {
     // console.log(adventure);
     const { id, adventureTitle, image, ecoFriendlyFeatures } = adventure
     return (
-        <div className="p-5 rounded-2xl bg-base-200">
+        <div className="p-5 rounded-2xl bg-base-200"  data-aos="zoom-in"  data-aos-duration="2000">
             <div>
                 <img className="rounded-2xl object-cover" src={image} alt="" />
             </div>

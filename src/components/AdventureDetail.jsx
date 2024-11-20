@@ -19,10 +19,10 @@ const AdventureDetail = () => {
     }
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-7xl mx-auto my-14 px-6 lg:px-0'>
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000">
                 <img className='h-full object-cover rounded-2xl' src={image} alt="" />
             </div>
-            <div className='space-y-3'>
+            <div className='space-y-3' data-aos="fade-left" data-aos-duration="1000">
                 <p className='text-3xl font-bold'>{adventureTitle}</p>
                 <p>{shortDescription}</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-2 text-lg font-semibold'>

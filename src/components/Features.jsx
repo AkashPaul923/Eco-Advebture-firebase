@@ -8,10 +8,10 @@ const Features = () => {
   return (
     <section className="bg-white py-12" >
       <div className="container mx-auto px-4">
-        <p className="text-5xl font-bold text-center mb-14">Our Features</p>
+        <p className="text-5xl font-bold text-center mb-14" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">Our Features</p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Feature 1 */}
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
             <div className="mb-4">
               <FaMountainSun className="text-orange-500 text-6xl" />
             </div>
@@ -22,7 +22,7 @@ const Features = () => {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
             <div className="mb-4">
               <GiBackpack className="text-orange-500 text-6xl" />
             </div>
@@ -33,7 +33,7 @@ const Features = () => {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
             <div className="mb-4">
               <FaUserTie className="text-orange-500 text-6xl" />
             </div>
@@ -44,7 +44,7 @@ const Features = () => {
           </div>
 
           {/* Feature 4 */}
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
             <div className="mb-4">
               <FaCalendarAlt className="text-orange-500 text-6xl" />
             </div>

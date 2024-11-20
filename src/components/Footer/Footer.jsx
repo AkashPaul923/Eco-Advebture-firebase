@@ -2,7 +2,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from "r
 
 const F = () => {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-8 max-w-7xl mx-auto">
+    <footer className="bg-gray-100 text-gray-800 py-8 max-w-7xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

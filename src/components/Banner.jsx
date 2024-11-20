@@ -24,7 +24,7 @@ const Banner = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <>
+    <div data-aos="fade-down" data-aos-duration="1000">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -102,7 +102,7 @@ const Banner = () => {
           <span ref={progressContent}></span>
         </div>
       </Swiper>
-    </>
+    </div>
   );
 };
 

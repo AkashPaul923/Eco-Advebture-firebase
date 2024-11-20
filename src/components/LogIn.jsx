@@ -34,7 +34,7 @@ const LogIn = () => {
   }
   return (
     <div className="bg-base-200 py-20">
-      <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl">
+      <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl" data-aos="zoom-in" data-aos-duration="1000">
         <h1 className="text-center mb-6 font-bold text-3xl">Login</h1>
         
         <div className="card max-w-lg mx-auto  w-full shrink-0">

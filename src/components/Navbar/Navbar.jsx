@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Auth/AuthProvider";
 import { toast } from "react-toastify";
+import logo from "../../assets/logo.png"
 // import auth from "../../firebase/firebase.init";
 
 const Navbar = () => {
@@ -34,7 +35,8 @@ const Navbar = () => {
                     }
                 </ul>
             </div>
-            <h2 className=" text-xl">Eco-Adventure</h2>
+            {/* <h2 className=" text-xl">Eco-Adventure</h2> */}
+            <img className="h-16" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">

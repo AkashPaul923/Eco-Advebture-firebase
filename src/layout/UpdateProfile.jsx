@@ -23,7 +23,7 @@ const UpdateProfile = () => {
   }
   return (
     <div className="bg-base-200 py-20">
-      <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl">
+      <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl" data-aos="zoom-in" data-aos-duration="1000">
         <h1 className="text-center font-bold text-3xl mb-5">Update Profile</h1>
         
         <div className="card max-w-lg mx-auto  w-full shrink-0">

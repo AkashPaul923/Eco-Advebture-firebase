@@ -25,7 +25,7 @@ const Review = () => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
-      <div className="">
+      <div className=""  data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000"  >
         <p className="text-4xl font-bold text-center">Clint Review</p>
         <div className="flex justify-center items-center">
           <div className="flex flex-col justify-center items-center p-10">
@@ -45,7 +45,7 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className=""  data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}

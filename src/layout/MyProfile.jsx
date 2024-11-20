@@ -8,7 +8,7 @@ const MyProfile = () => {
     // const { displayName, email, photoURL } = user
     // console.log(displayName, email, photoURL );
     return (
-        <div className='flex flex-col gap-5 justify-end items-center text-center my-14'>
+        <div className='flex flex-col gap-5 justify-end items-center text-center my-14' data-aos="zoom-in" data-aos-duration="1000">
             <p className='text-4xl font-bold text-teal-700 mb-16'>Wellcome {user.displayName} on your profile</p>
             <div>
                 <img className='h-[200px] w-[200px] object-cover rounded-full border-2' src={user.photoURL} alt="" />
