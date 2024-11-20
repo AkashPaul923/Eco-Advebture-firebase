@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Auth/AuthProvider";
+// import auth from "../../firebase/firebase.init";
 
 const Navbar = () => {
     const { user, handleSignOut } = useContext( AuthContext )
-    // console.log(name);
+    console.log(user);
     const links = <>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/myprofile">My Profile</NavLink></li>
@@ -36,8 +37,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
             {
-                user && <div className="tooltip hover:tooltip-open tooltip-left" data-tip= {user.displayName }>
-                    <img className="h-12 w-12 object-cover rounded-full border mr-3" src={ user.photoURL} alt="" /></div>
+                user && <img className="h-12 w-12 object-cover rounded-full border mr-3" src={user.photoURL} alt="" />   
             }
             {
                 user ? <button onClick={handleSignOut} className="btn">Log Out</button> 

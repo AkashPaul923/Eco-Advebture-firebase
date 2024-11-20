@@ -13,7 +13,7 @@ const AuthProvider = ({children}) => {
     const googleProvider = new GoogleAuthProvider()
 
     const handleGoogleSignIn = () =>{
-        signInWithPopup( auth, googleProvider )
+        return signInWithPopup( auth, googleProvider )
     }
 
     const handleRegister = ( email, password ) => {
@@ -21,7 +21,7 @@ const AuthProvider = ({children}) => {
     }
 
     const handleSignIn = ( email, password ) =>{
-        signInWithEmailAndPassword( auth, email, password)
+        return signInWithEmailAndPassword( auth, email, password)
     }
 
     const handleSignOut = () =>{
@@ -29,7 +29,7 @@ const AuthProvider = ({children}) => {
     }
 
     const manageProfile = ( name, photo ) =>{
-        updateProfile( auth.currentUser, {
+        return  updateProfile( auth.currentUser, {
             displayName: name,
             photoURL: photo,
         })
@@ -37,7 +37,7 @@ const AuthProvider = ({children}) => {
 
     useEffect(()=>{
         const unsubscribe = onAuthStateChanged( auth, (currentUser)=>{
-            // console.log(currentUser);
+            console.log(currentUser);
             if( currentUser ){
                 setUser(currentUser)
             }
