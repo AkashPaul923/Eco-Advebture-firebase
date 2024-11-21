@@ -11,8 +11,8 @@ const LogIn = () => {
   const [seePass , setSeePass] = useState(true)
   const emailRef = useRef()
   const { handleSignIn, handleGoogleSignIn } = useContext(AuthContext)
-  // const location = useLocation()
-  // console.log(location.state);
+  const location = useLocation()
+  console.log(location.state);
   const navigate = useNavigate()
   const handleSubmit = ( e ) =>{
     e.preventDefault()
@@ -21,7 +21,7 @@ const LogIn = () => {
     // console.log(email, password);
     handleSignIn( email, password )
     .then(res => {
-        navigate("/")
+        navigate( location?.state ? location.state : "/")
         toast.success("Successfully Login")
     })
     .catch(res =>{
@@ -31,7 +31,7 @@ const LogIn = () => {
   const handleGoogle = () => {
     handleGoogleSignIn()
     .then(res=>{
-      navigate("/")
+      navigate( location?.state ? location.state : "/")
       toast.success("Successfully Login")
     })
   }
