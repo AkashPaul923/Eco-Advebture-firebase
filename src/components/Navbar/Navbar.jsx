@@ -46,9 +46,11 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="navbar-end">
+            
             {
-                user && <img className="h-12 w-12 object-cover rounded-full border mr-3" src={user.photoURL} alt="" />   
+                user && <div className="tooltip hover:tooltip-open tooltip-left" data-tip={user.displayName}><img className="h-12 w-12 object-cover rounded-full border mr-3" src={user.photoURL} alt="" /> </div>  
             }
+            
             {
                 loader ? ""   :
                 user ? <button onClick={handleLogOut} className="btn bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold ">Log Out</button> 
