@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 
 
 const LogIn = () => {
+  const emailRef = useRef()
   const { handleSignIn, handleGoogleSignIn } = useContext(AuthContext)
   // const location = useLocation()
   // console.log(location.state);
@@ -32,6 +33,13 @@ const LogIn = () => {
       toast.success("Successfully Register")
     })
   }
+
+  const handleForgetPassword = () =>{
+    // console.log("clicked");
+    const inputEmail = emailRef.current.value
+    navigate('/auth/resetpassword', {state : inputEmail})
+  }
+
   return (
     <div className="bg-base-200 py-20">
       <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl" data-aos="zoom-in" data-aos-duration="1000">
@@ -49,6 +57,7 @@ const LogIn = () => {
                 type="email"
                 placeholder="email"
                 name="email"
+                ref={emailRef}
                 className="input input-bordered"
                 required
               />
@@ -65,9 +74,9 @@ const LogIn = () => {
                 required
               />
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
+                <p onClick={handleForgetPassword} className="label-text-alt link link-hover">
                   Forgot password?
-                </a>
+                </p>
               </label>
             </div>
             <div className="form-control mt-6">

@@ -9,6 +9,7 @@ import AdventureDetail from "../components/AdventureDetail";
 import MyProfile from "../layout/MyProfile";
 import UpdateProfile from "../layout/UpdateProfile";
 import PrivateRoute from "../components/Auth/PrivateRoute";
+import ResetPassword from "../components/ResetPassword";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
                 {
                     path: "/auth/register",
                     element: <Register></Register>
+                },
+                {
+                    path: "/auth/resetpassword",
+                    element: <ResetPassword></ResetPassword>
                 },
             ]
         },
