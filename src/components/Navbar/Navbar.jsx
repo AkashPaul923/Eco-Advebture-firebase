@@ -11,7 +11,7 @@ const Navbar = () => {
     const links = <>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/myprofile">My Profile</NavLink></li>
-                    {/* <li><NavLink to="/auth/register">register</NavLink></li> */}
+                    <li><NavLink to="/updateprofile">Update Profile</NavLink></li>
                 </>
    
    const handleLogOut = () =>{
