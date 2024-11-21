@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
-import Swal from 'sweetalert2'
+// import Swal from 'sweetalert2'
 
 const ResetPassword = () => {
     const {handleResetPassword} = useContext(AuthContext)
@@ -18,12 +18,14 @@ const ResetPassword = () => {
         event.preventDefault()
         handleResetPassword(email)
         .then(() =>{
-            Swal.fire({
-                title: "The email has been sent successfully.",
-                text: "Check your email for the link to reset your password.",
-                icon: 'success',
-                confirmButtonText: 'cancel'
-            })
+            // Swal.fire({
+            //     title: "The email has been sent successfully.",
+            //     text: "Check your email for the link to reset your password.",
+            //     icon: 'success',
+            //     confirmButtonText: 'cancel'
+            // })
+            const gmailLink = "https://mail.google.com/mail/u/0/#inbox";
+            window.open(gmailLink, "_blank");
             navigate("/auth/login")
         })
     }
