@@ -11,7 +11,7 @@ const Navbar = () => {
     const links = <>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/myprofile">My Profile</NavLink></li>
-                    <li><NavLink to="/auth/register">register</NavLink></li>
+                    {/* <li><NavLink to="/auth/register">register</NavLink></li> */}
                 </>
    
    const handleLogOut = () =>{
@@ -51,8 +51,8 @@ const Navbar = () => {
             }
             {
                 loader ? ""   :
-                user ? <button onClick={handleLogOut} className="btn">Log Out</button> 
-                : <Link to="/auth/login" className="btn">Log in</Link>
+                user ? <button onClick={handleLogOut} className="btn bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold ">Log Out</button> 
+                : <Link to="/auth/login" className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 text-white font-bold btn">Log in</Link>
             }
             
         </div>

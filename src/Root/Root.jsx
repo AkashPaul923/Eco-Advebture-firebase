@@ -15,6 +15,7 @@ const Root = () => {
             "/updateprofile" : "Eco-Adventure || Update-Profile",
             "/auth/login" : "Eco-Adventure || Login",
             "/auth/register" : "Eco-Adventure || Register",
+            "/auth/resetpassword" : "Eco-Adventure || Password-Reset",
         }
         const title = routeTitles[location.pathname] || "Eco-Adventure || Adventure-Detail"
         document.title = title

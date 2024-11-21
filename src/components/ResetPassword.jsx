@@ -19,8 +19,8 @@ const ResetPassword = () => {
         handleResetPassword(email)
         .then(() =>{
             Swal.fire({
-                title: 'Successfully Email sended',
-                text: 'Please Check your email-box for reset password',
+                title: "The email has been sent successfully.",
+                text: "Check your email for the link to reset your password.",
                 icon: 'success',
                 confirmButtonText: 'cancel'
             })
@@ -28,7 +28,7 @@ const ResetPassword = () => {
         })
     }
   return (
-    <div>
+    <div className="bg-gradient-to-b from-blue-200 via-cyan-100 to-blue-200 py-28">
       <div
         className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl"
         data-aos="zoom-in"

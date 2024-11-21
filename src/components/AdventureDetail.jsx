@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 const AdventureDetail = () => {
     const adventure = useLoaderData()
@@ -13,9 +14,14 @@ const AdventureDetail = () => {
             window.open(meetLink, "_blank");
         }
         else{
-            document.getElementById('my_modal_5').showModal()
+            Swal.fire({
+                title: "Apologies, there's no expert available at the moment.",
+                text: "Please try contacting us between 10:00 AM and 8:00 PM.",
+                icon: 'error',
+                confirmButtonText: 'Cancel'
+              })
         }
-
+        
     }
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-7xl mx-auto my-14 px-6 lg:px-0'>
@@ -57,20 +63,6 @@ const AdventureDetail = () => {
                 <button onClick={handleTalkBtn} className='btn btn-outline'>Talk with Expert</button>
 
             </div>
-            {/* Open the modal using document.getElementById('ID').showModal() method */}
-            {/* <button className="btn" onClick={()=>document.getElementById('my_modal_5').showModal()}>open modal</button> */}
-            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                <div className="modal-box flex flex-col justify-center items-center">
-                    <h3 className="font-bold text-lg">Thanks for contact with us</h3>
-                    <p className="py-4">Please try again 8 am to 10 pm</p>
-                    <div className="modal-action">
-                        <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
-                            <button className="btn">Close</button>
-                        </form>
-                    </div>
-                </div>
-            </dialog>
         </div>
     );
 };

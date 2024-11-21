@@ -7,6 +7,14 @@ import { toast } from "react-toastify";
 const Register = () => {
   const { handleRegister, manageProfile , handleGoogleSignIn, setUser } = useContext(AuthContext)
   const navigate = useNavigate()
+
+    // Check for an uppercase letter
+    const hasUppercase = /(?=.*[A-Z])/;
+
+    // Check for a lowercase letter
+    const hasLowercase = /(?=.*[a-z])/;
+ 
+
   const handleSubmit = ( e ) =>{
     e.preventDefault()
     const name = e.target.name.value
@@ -14,6 +22,15 @@ const Register = () => {
     const email = e.target.email.value
     const password = e.target.password.value
     // console.log(name, photo, email, password);
+    if(!hasUppercase.test(password)){
+      return toast.error("Must have an Uppercase letter in the password")
+    }
+    if(!hasLowercase.test(password)){
+      return toast.error("Must have a Lowercase letter in the password ")
+    }
+    if(password.length < 6){
+      return toast.error("Length must be at least 6 character ")
+    }
     handleRegister( email, password )
     .then((res) =>{
       manageProfile( name, photo )
@@ -32,7 +49,7 @@ const Register = () => {
     })
   }
   return (
-    <div className="bg-base-200 py-20">
+    <div className="bg-gradient-to-b from-blue-200 via-cyan-100 to-blue-200 py-20">
       <div className="max-w-xl mx-auto bg-white py-10 border-2 rounded-2xl" data-aos="zoom-in" data-aos-duration="1000">
         <h1 className="text-center font-bold text-3xl mb-5">Create an Account</h1>
         
