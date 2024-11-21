@@ -22,20 +22,22 @@ const F = () => {
             <div>
               <h3 className="font-semibold mb-2">Explore</h3>
               <ul className="text-sm space-y-2">
-                <li>About Us</li>
+                {/* <li>About Us</li>
                 <li>Terms & Conditions</li>
                 <li>FAQ</li>
                 <li>Hotel Sitemap</li>
-                <li>Medical Tourism</li>
+                <li>Medical Tourism</li> */}
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/myprofile">My Profile</Link></li>
+                <li><Link to="/updateprofile">Update Profile</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-2">Services</h3>
+              <h3 className="font-semibold mb-2">Other Links</h3>
               <ul className="text-sm space-y-2">
-                <li>Flight</li>
-                <li>Hotel</li>
-                <li>Holiday</li>
-                <li>Visa</li>
+                <li><Link to="/auth/login">Login</Link></li>
+                  <li><Link to="/auth/register">Register</Link></li>
+                  {/* <li><Link to="/updateprofile">Update Profile</Link></li> */}
               </ul>
             </div>
           </div>
@@ -46,14 +48,13 @@ const F = () => {
             <ul className="text-sm space-y-2">
               <li>Email: <a href="mailto:ask@ecoadventure.net" className="text-blue-600">ask@ecoadventure.net</a></li>
               <li>Phone: +880 9617 617617</li>
-              <li>WhatsApp: <a href="#" className="text-blue-600">Message us</a></li>
             </ul>
             <div className="flex space-x-4 mt-4">
-              <Link to="/www.facebook.com"><FaFacebookF className="text-blue-700" /></Link>
-              <Link to="/www.twitter.com"><FaTwitter className="text-blue-400" /></Link>
-              <Link to="/www.instagram.com"><FaInstagram className="text-pink-500" /></Link>
-              <Link to="/www.linkedin.com"><FaLinkedinIn className="text-blue-600" /></Link>
-              <Link to="/www.whatsapp.com"><FaWhatsapp className="text-green-500" /></Link>
+              <div onClick={()=>window.open("https://www.facebook.com/", "_blank")}><FaFacebookF className="text-blue-700" /></div>
+              <div onClick={()=>window.open("https://www.twitter.com/", "_blank")}><FaTwitter className="text-blue-400" /></div>
+              <div onClick={()=>window.open("https://www.instagram.com/", "_blank")}><FaInstagram className="text-pink-500" /></div>
+              <div onClick={()=>window.open("https://www.linkedin.com/", "_blank")}><FaLinkedinIn className="text-blue-600" /></div>
+              <div onClick={()=>window.open("https://www.whatsapp.com/", "_blank")}><FaWhatsapp className="text-green-500" /></div>
             </div>
           </div>
         </div>
