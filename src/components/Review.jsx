@@ -45,7 +45,7 @@ const Review = () => {
         </div>
       </div>
 
-      <div className=""  data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
+      <div className="w-5/6 lg:w-full mx-auto"  data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -58,7 +58,7 @@ const Review = () => {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 40,
             },
             1024: {

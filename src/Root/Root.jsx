@@ -21,7 +21,7 @@ const Root = () => {
         document.title = title
     },[location])
     return (
-        <div>
+        <div className='px-5 lg:px-0'>
             <nav>
                 <Navbar></Navbar>
             </nav>

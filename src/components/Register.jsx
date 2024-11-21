@@ -111,8 +111,8 @@ const Register = () => {
               />
               <div className="absolute text-xl right-6 top-12">
                 {
-                  seePass ? <button onClick={() => setSeePass(!seePass)}><LuEye /></button> :
-                  <button onClick={() => setSeePass(!seePass)}><LuEyeOff /></button>
+                  seePass ? <p onClick={() => setSeePass(!seePass)}><LuEye /></p> :
+                  <p onClick={() => setSeePass(!seePass)}><LuEyeOff /></p>
                 }
               </div>
             </div>

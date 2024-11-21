@@ -42,7 +42,7 @@ const Banner = () => {
       >
         <SwiperSlide>
           <div
-            className="hero lg:h-[500px]"
+            className="hero h-[300px] md:h-[500px]"
             style={{
               backgroundImage:
                 `url(${banner0})`,
@@ -51,7 +51,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-neutral-content text-center">
               <div className="">
-                <h1 className="mb-5 text-5xl font-bold">Nature is Calling Escape Now</h1>
+                <h1 className="mb-5 text-2xl md:text-5xl font-bold">Nature is Calling Escape Now</h1>
                 <p className="mb-5">
                 Step into the Wilderness, Embrace Adventure, and Rediscover the Beauty of Our Planet
                 </p>
@@ -64,35 +64,35 @@ const Banner = () => {
           <img
             src={banner1}
             alt=""
-            className="w-full lg:h-[500px] object-cover"
+            className="w-full h-[300px] md:h-[500px] object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={banner2}
             alt=""
-            className="w-full lg:max-h-[500px] object-cover"
+            className="w-full h-[300px] md:h-[500px] object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={banner3}
             alt=""
-            className="w-full lg:max-h-[500px] object-cover"
+            className="w-full h-[300px] md:h-[500px] object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={banner4}
             alt=""
-            className="w-full lg:max-h-[500px] object-cover"
+            className="w-full h-[300px] md:h-[500px] object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={banner5}
             alt=""
-            className="w-full lg:max-h-[500px] object-cover"
+            className="w-full h-[300px] md:h-[500px] object-cover"
           />
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">

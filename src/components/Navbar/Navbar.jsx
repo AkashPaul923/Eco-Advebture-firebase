@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png"
 
 const Navbar = () => {
     const { user, handleSignOut, loader } = useContext( AuthContext )
-    console.log(user);
+    // console.log(user);
     const links = <>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/myprofile">My Profile</NavLink></li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* <h2 className=" text-xl">Eco-Adventure</h2> */}
-            <img className="h-16" src={logo} alt="" />
+            <img className="h-8 md:h-16" src={logo} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
