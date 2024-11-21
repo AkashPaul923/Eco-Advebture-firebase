@@ -1,12 +1,14 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { LuEyeOff, LuEye } from "react-icons/lu";
 
 
 
 const LogIn = () => {
+  const [seePass , setSeePass] = useState(true)
   const emailRef = useRef()
   const { handleSignIn, handleGoogleSignIn } = useContext(AuthContext)
   // const location = useLocation()
@@ -20,7 +22,7 @@ const LogIn = () => {
     handleSignIn( email, password )
     .then(res => {
         navigate("/")
-        toast.success("Successfully Register")
+        toast.success("Successfully Login")
     })
     .catch(res =>{
       toast.error("Email Or Password incorrect")
@@ -30,7 +32,7 @@ const LogIn = () => {
     handleGoogleSignIn()
     .then(res=>{
       navigate("/")
-      toast.success("Successfully Register")
+      toast.success("Successfully Login")
     })
   }
 
@@ -62,17 +64,23 @@ const LogIn = () => {
                 required
               />
             </div>
-            <div className="form-control">
+            <div className="form-control relative">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="password"
+                type={`${seePass ?  "password" : "text" }`}
                 placeholder="password"
                 name="password"
                 className="input input-bordered"
                 required
               />
+              <div className="absolute text-xl right-6 top-12">
+                {
+                  seePass ? <button onClick={() => setSeePass(!seePass)}><LuEye /></button> :
+                  <button onClick={() => setSeePass(!seePass)}><LuEyeOff /></button>
+                }
+              </div>
               <label className="label">
                 <p onClick={handleForgetPassword} className="label-text-alt link link-hover">
                   Forgot password?

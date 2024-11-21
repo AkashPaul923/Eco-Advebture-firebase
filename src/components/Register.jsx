@@ -1,8 +1,10 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Auth/AuthProvider";
 import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
+import { FaRegEye } from "react-icons/fa";
+import { LuEyeOff, LuEye } from "react-icons/lu";
 
 const Register = () => {
   const { handleRegister, manageProfile , handleGoogleSignIn, setUser } = useContext(AuthContext)
@@ -13,7 +15,7 @@ const Register = () => {
 
     // Check for a lowercase letter
     const hasLowercase = /(?=.*[a-z])/;
- 
+    const [seePass , setSeePass] = useState( true )
 
   const handleSubmit = ( e ) =>{
     e.preventDefault()
@@ -38,7 +40,10 @@ const Register = () => {
         setUser({...res.user, displayName: name, photoURL : photo})
         navigate("/")
       })
-      toast.success("Successfully Login")
+      toast.success("Successfully register")
+    })
+    .catch(() =>{
+      toast.error("User already exist")
     })
   }
   const handleGoogle = () => {
@@ -93,17 +98,23 @@ const Register = () => {
                 required
               />
             </div>
-            <div className="form-control">
+            <div className="form-control relative">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="password"
+                type={`${seePass ? "password" : "text" }`}
                 placeholder="password"
                 name="password"
                 className="input input-bordered"
                 required
               />
+              <div className="absolute text-xl right-6 top-12">
+                {
+                  seePass ? <button onClick={() => setSeePass(!seePass)}><LuEye /></button> :
+                  <button onClick={() => setSeePass(!seePass)}><LuEyeOff /></button>
+                }
+              </div>
             </div>
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
